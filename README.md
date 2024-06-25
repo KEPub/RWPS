@@ -1,5 +1,7 @@
 # Compile and Test DLL Instructions
 
+Used to test code execution,  the DLL will create a msgbox with the eicar signature, or call "Invoke-Mimikatz".  Goal is just to show execution.
+
 ## Steps to Compile and Test
 
 1. **Open Developer Command Prompt for Visual Studio**
