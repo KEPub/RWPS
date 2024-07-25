@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mal", "mal.vcxproj", "{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Debug|x64.ActiveCfg = Debug|x64
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Debug|x64.Build.0 = Debug|x64
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Debug|x86.Build.0 = Debug|Win32
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Release|x64.ActiveCfg = Release|x64
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Release|x64.Build.0 = Release|x64
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Release|x86.ActiveCfg = Release|Win32
+		{10CC9079-F195-4318-BDD8-FB7ACAAE96ED}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3291093C-7ACB-4EED-9B46-EF5B01FB7D18}
+	EndGlobalSection
+EndGlobal

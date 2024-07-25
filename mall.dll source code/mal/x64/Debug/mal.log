@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  dllmain.cpp
+  mal.cpp
+  Generating Code...
+mal.obj : error LNK2005: DllMain already defined in dllmain.obj
+     Creating library C:\Users\User\source\repos\test\mal\mal\x64\Debug\mal.lib and object C:\Users\User\source\repos\test\mal\mal\x64\Debug\mal.exp
+C:\Users\User\source\repos\test\mal\mal\x64\Debug\mal.dll : fatal error LNK1169: one or more multiply defined symbols found
