@@ -1,3 +1,14 @@
+# File Hash
+
+| File                | SHA256 Hash                                                           |
+|---------------------|-----------------------------------------------------------------------|
+| 	mal.cpp	          | 	FE28C5CC1BC3F19E05692348B1563D7525CC070D1E31ECE6FF2F9FDB8A24B1C3	 | 
+| 	mal.def	          | 	57F3D35D7FC17DF2C7BC412C8DE9757E724F7C580452EB39613AED677DD7966B	 | 
+| 	mal.h	             | 	C3301B7147D4D0F04C1FE91A7AC3592D044A45891D740DED8C403956B4F48E9B   | 
+| 	Readme.md	       | 	078163D5C16F64CAA5A14784323FD51451B8C831C73396B967B4E35E6879937B	 | 
+
+
+
 # Compile and Test DLL Instructions
 
 Used to test code execution,  the DLL will create a msgbox with an eicar signature, or call "Invoke-Mimikatz" as to show execution. Dynamic Library (.dll) was compiled using Visual Studio 2022.
