@@ -1,4 +1,0 @@
-LIBRARY mal
-EXPORTS
-    eicar
-    mimi
