@@ -26,43 +26,51 @@ Used to test code execution,  the DLL will create a msgbox with an eicar signatu
 
 ## Steps to Compile and Test
 1. **Open Developer Command Prompt for Visual Studio**
-   - Download the provided sources code, and open the Dll1.sln file using Visual Studio Code.
+   - Download the sources code, and open the 'mal.sln' in Visual Studio.
 
 2. **Open Developer Command Prompt for Visual Studio**
-   - right click on "Solution Explorer", and go to "Open in Terminal".
+   - On the right in the Solution Explorer, right click on the project 'mal', and select "Open in Terminal".
 
-![image](https://github.com/user-attachments/assets/acc7adf5-0552-4254-8d04-bd63f47edc4d)
-
-3. **Navigate to the Directory Containing Your Source Files**
-   - Use `cd` to navigate to the directory where `mal.cpp` and `mal.def` are located.
-
-4. **Compile the DLL**
+   ![image](https://github.com/user-attachments/assets/0c26e9ed-9449-4410-b957-de015bc211cb)
+   
+3. **Compile the DLL**
    - Use the following command to compile the DLL:
      ```sh
-     cl /LD /EHsc mal.cpp mal.def user32.lib
+     cl /LD /EHsc mal.cpp pch.cpp mal.def user32.lib
      ```
+   ![image](https://github.com/user-attachments/assets/9ee1f7af-de30-4c41-a184-71223834b718)
 
-5. **Verify the Export Table**
+
+4. **Verify the Export Table**
    - Use `dumpbin` to check the exported functions:
      ```sh
      dumpbin /exports mal.dll
      ```
    - Ensure both `eicar` and `mimi` are listed without decorations.
 
-6. **Place the DLL in the System Directory**
-   - Copy the `mal.dll` file to `C:\Windows\System32`:
-     ```sh
-     copy mal.dll C:\Windows\System32
-     ```
+   ![image](https://github.com/user-attachments/assets/6da0faf4-eed9-49f9-8da4-1d680ef78962)
 
-7. **Run the DLL**
-   - Use `rundll32.exe` to run the exported functions:
+5. **Run the DLL**
+   - Use `rundll32.exe` to run the functions:
      - **Run the `eicar` function:**
        ```sh
        rundll32.exe C:\Windows\System32\mal.dll,eicar
        ```
+       ![image](https://github.com/user-attachments/assets/45daa001-d085-4891-83de-75c2036a8f61)
+
      - **Run the `mimi` function:**
        ```sh
        rundll32.exe C:\Windows\System32\mal.dll,mimi
        ```
+      ![image](https://github.com/user-attachments/assets/7a9e86b5-2856-491c-ba6d-40a696ce3d39)
 
+6. **<Optional> If Issues**
+   - Open windows CLI with Admin privilages
+   - copy the mal.dll to c:\windows\system32\ using hte following command;
+   ```sh
+   copy mal.dll C:\Windows\System32
+    ```
+   - Repeat Step 5, if furhter issues use the full path to the DLL. For example:
+    ```sh
+   rundll32.exe C:\Windows\System32\mal.dll,eicar
+   ```
